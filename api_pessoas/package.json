@@ -1,0 +1,24 @@
+{
+  "name": "tds_mods_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ewelgulo/TDS_MODS_3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ewelgulo/TDS_MODS_3/issues"
+  },
+  "homepage": "https://github.com/Ewelgulo/TDS_MODS_3#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

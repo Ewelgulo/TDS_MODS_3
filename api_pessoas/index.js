@@ -56,7 +56,6 @@ app.put("/pessoas", (request, response) => {
     const pessoa = pessoas.filter((item) => item.id == id);
 
 
-    response.send({ id, nome, telefone, status });
 
     if (pessoa.length <= 0) {
 
@@ -70,7 +69,22 @@ app.put("/pessoas", (request, response) => {
 
 });
 
+app.delete("/pessoas/:id", (request,response)=>{
+    
+    const {id} = request.params;
 
+    const indexPessoas = pessoas.findIndex(i => i.id == id);
+    
+
+    if(indexPessoas > -1){
+        pessoas.splice(indexPessoas, 1);
+        return response.send({mensagem: "Pessoa deletada com sucesso!"});
+    }else{
+        return response.send({mensagem:"Erro na execução. Id inexistente"});
+        }
+
+
+});
 
 
 

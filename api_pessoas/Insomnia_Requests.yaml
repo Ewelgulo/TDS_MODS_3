@@ -1,0 +1,145 @@
+type: collection.insomnia.rest/5.0
+name: My first collection
+meta:
+  id: wrk_70c1c5b725b8465f83f3dd619a974df6
+  created: 1756938425362
+  modified: 1756938425362
+  description: ""
+collection:
+  - url: "{{ _.baseUrl }}pessoas"
+    name: DELETAR PESSOA
+    meta:
+      id: req_0fd7ad08cdfd46a7baebe9a3964f3f8e
+      created: 1756938427695
+      modified: 1756939013507
+      isPrivate: false
+      description: ""
+      sortKey: -1756938427695
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}pessoas"
+    name: CRIAR PESSOA
+    meta:
+      id: req_8ee8d703ee6d4a6bb2a4f5bfb71af526
+      created: 1756938763915
+      modified: 1756939187664
+      isPrivate: false
+      description: ""
+      sortKey: -1756938763915
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 3,
+        		"nome": "Matheu",
+        		"telefone": "46 40028922",
+        	"status": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}pessoas"
+    name: VER PESSOA
+    meta:
+      id: req_bb285b60df2d450b8f091d67d674d79c
+      created: 1756938775429
+      modified: 1756939196382
+      isPrivate: false
+      description: ""
+      sortKey: -1756938775429
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 3,
+        		"nome": "Matheu",
+        		"telefone": "46 40028922",
+        	"status": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}pessoas"
+    name: ATUALIZAR PESSOA
+    meta:
+      id: req_048e1127747446f89f79ca67b65b2c6d
+      created: 1756938882688
+      modified: 1756939321448
+      isPrivate: false
+      description: ""
+      sortKey: -1756938882688
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 3,
+        		"nome": "Matheus",
+        		"telefone": "46 40028922",
+        	"status": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_5bf56f19b1758d7cc0f6aae27d8c695aebdeb439
+    created: 1756938425379
+    modified: 1756938425379
+environments:
+  name: URL BASE
+  meta:
+    id: env_5bf56f19b1758d7cc0f6aae27d8c695aebdeb439
+    created: 1756938425376
+    modified: 1756938828371
+    isPrivate: false
+  data:
+    baseUrl: http://localhost:8080/

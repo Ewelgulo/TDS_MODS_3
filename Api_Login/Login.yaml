@@ -1,0 +1,75 @@
+type: collection.insomnia.rest/5.0
+name: Cadastro_Login
+meta:
+  id: wrk_2787c28ed47d44e08b104a499ac7cec7
+  created: 1748096167383
+  modified: 1756946564933
+  description: ""
+collection:
+  - url: "{{ _.baseUrl }}Cadastro"
+    name: Cadastro
+    meta:
+      id: req_cbb9f84705b943bc95db4487c69ff838
+      created: 1756946403309
+      modified: 1756948345809
+      isPrivate: false
+      description: ""
+      sortKey: -1756946403309
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"Nome": "Marcos",
+        	"Usuario": "Teste1",
+        	"Senha": "Testeasasas"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}Cadastro"
+    name: Ver Cadastros
+    meta:
+      id: req_2a562c4a02e54529b9fd87736b5b948d
+      created: 1756946813707
+      modified: 1756946837154
+      isPrivate: false
+      description: ""
+      sortKey: -1756946813707
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_ffa3b4d5af7b90f68397e9b72cd390f78ca1d417
+    created: 1756946386023
+    modified: 1756946386023
+environments:
+  name: Base Environment
+  meta:
+    id: env_ffa3b4d5af7b90f68397e9b72cd390f78ca1d417
+    created: 1748096167398
+    modified: 1756946571905
+    isPrivate: false
+  data:
+    baseUrl: http://localhost:8080/
